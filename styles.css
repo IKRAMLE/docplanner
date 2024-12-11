@@ -119,7 +119,8 @@ nav .container {
 .lead-logo {
     width: 40px;
     height: auto;
-    margin-bottom: 33px;
+    margin-top: -32px;
+    margin-bottom: 8px;
 }
 
 .header-section h1 {
@@ -143,4 +144,88 @@ nav .container {
     font-size: 1rem;
     font-weight: 400;
     line-height: 1.75;
+}
+/* Services Section */
+.services-section {
+    padding: 2.5rem 0;
+}
+
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2.5rem;
+}
+
+.service-card {
+    border-radius: 10px;
+    color: white;
+    overflow: hidden;
+    height: 345px;
+    transition: all .2s ease-in-out;
+}
+
+.service-card:hover {
+    transform: translateY(-5px);
+}
+
+.service-card-inner {
+    padding: 2rem;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.service-icon {
+    margin-bottom: 1rem;
+}
+
+.service-icon img {
+    width: 24px;
+    height: 24px;
+}
+
+.service-card h2 {
+    font-size: 1.625rem;
+    font-weight: 400;
+    margin-bottom: 0.5rem;
+}
+
+.service-card h3 {
+    font-size: 1.5rem;
+    font-weight: 300;
+    margin-bottom: 1.5rem;
+    line-height: 1.2;
+}
+
+.for-patients {
+    background: #00ccb1;
+}
+
+.for-doctors {
+    background: #3d83df;
+}
+
+.for-clinics {
+    background: #1b2734;
+}
+
+.style-select {
+    margin-top: auto;
+}
+
+.style-select select {
+    width: 100%;
+    background: transparent;
+    border: 0;
+    border-radius: 0;
+    padding: 0 2em 0 0;
+    color: #fff;
+    text-decoration: underline;
+    cursor: pointer;
+    font-size: 1.2em;
+}
+
+.style-select select option {
+    color: #333;
+    background: #fff;
 }

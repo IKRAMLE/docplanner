@@ -4,6 +4,7 @@
     box-sizing: border-box;
 }
 
+
 body {
     font-family: Arial, sans-serif;
     color: #747474;
@@ -19,7 +20,8 @@ body {
     position: relative;
 }
 
-nav {
+/* Navigation */
+.nav {
     position: fixed;
     top: 0;
     left: 0;
@@ -31,7 +33,7 @@ nav {
     padding: 1rem 0;
 }
 
-nav .container {
+.nav .container {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -48,14 +50,14 @@ nav .container {
     height: auto;
 }
 
-.nav-ul {
+.nav-links {
     display: flex;
     list-style: none;
     align-items: center;
     gap: 1.5rem;
 }
 
-.nav-ul a {
+.nav-links a {
     text-decoration: none;
     color: #ababab;
     font-size: 0.9375rem;
@@ -63,7 +65,7 @@ nav .container {
     padding: 0 0.75rem;
 }
 
-.nav-ul a:hover,
+.nav-links a:hover,
 .nav-links a.active {
     color: #00b39b;
 }
@@ -106,6 +108,8 @@ nav .container {
     padding: 0.75rem 1.5rem;
     font-size: 0.875rem;
 }
+
+/* Lead Section */
 .lead-section {
     margin-top: 70px;
     padding: 80px 0 40px;
@@ -119,8 +123,7 @@ nav .container {
 .lead-logo {
     width: 40px;
     height: auto;
-    margin-top: -32px;
-    margin-bottom: 8px;
+    margin-bottom: 33px;
 }
 
 .header-section h1 {
@@ -145,6 +148,7 @@ nav .container {
     font-weight: 400;
     line-height: 1.75;
 }
+
 /* Services Section */
 .services-section {
     padding: 2.5rem 0;
@@ -229,6 +233,7 @@ nav .container {
     color: #333;
     background: #fff;
 }
+
 /* Brands Section */
 .brands-section {
     margin: 2.5rem 0;
@@ -285,6 +290,8 @@ nav .container {
     height: auto;
     padding: 5px;
 }
+
+
 /* Stats Section */
 .stats-section {
     background-color: #e5faf8;
@@ -378,6 +385,9 @@ nav .container {
     width: 500px;
     z-index: 1;
 }
+
+
+
 /* Offices Section */
 .offices-section {
     padding: 4rem 0;
@@ -405,4 +415,65 @@ nav .container {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
     gap: 1.5rem;
+}
+
+.office-card {
+    background: white;
+    border-radius: 5px;
+    overflow: hidden;
+    transition: all .2s ease-in-out;
+}
+
+.office-card:hover {
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+    transform: translateY(-5px);
+}
+
+.office-card a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.office-card figure {
+    margin: 0;
+}
+
+.office-card img {
+    width: 100%;
+    height: auto;
+    transition: transform .3s ease-in-out;
+}
+
+.office-card:hover img {
+    transform: scale(1.01);
+}
+
+.office-desc {
+    padding: 1.25rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.office-desc span {
+    font-size: 1.125rem;
+    font-weight: 400;
+    color: #747474;
+}
+
+.office-desc button {
+    background: #3d83df;
+    color: white;
+    font-size: 0.625rem;
+    font-weight: 700;
+    letter-spacing: 0.04em;
+    padding: 1em 1.5em;
+    border-radius: 4px;
+    border: 0;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+
+.office-desc button:hover {
+    background: #1662c6;
 }

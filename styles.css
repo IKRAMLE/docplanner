@@ -229,3 +229,59 @@ nav .container {
     color: #333;
     background: #fff;
 }
+/* Brands Section */
+.brands-section {
+    margin: 2.5rem 0;
+    padding: 2rem 0;
+    position: relative;
+    background: #ffffff;
+}
+
+.brands-inner {
+    max-width: 1015px;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: flex;
+    align-items: flex-start;
+}
+
+.brands-inner h1 {
+    font-size: 2.1875rem;
+    color: #00b39b;
+    font-family: Work Sans, Arial, sans-serif;
+    font-weight: 300;
+    letter-spacing: -0.3px;
+    width: 33%;
+    padding-right: 2rem;
+    line-height: 1.2;
+    margin: 0.25em 0;
+}
+
+.brands-logos {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 2.5rem 2rem;
+    width: 67%;
+    align-items: center;
+    padding-top: 5px;
+}
+
+.brands-logos a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    filter: grayscale(100%);
+    opacity: 0.55;
+    transition: all 0.2s ease-in-out;
+}
+
+.brands-logos a:hover {
+    filter: grayscale(0);
+    opacity: 1;
+}
+
+.brands-logos img {
+    max-width: 100%;
+    height: auto;
+    padding: 5px;
+}

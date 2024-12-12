@@ -111,7 +111,7 @@ body {
 /* Lead Section */
 .lead-section {
     margin-top: 70px;
-    padding: 80px 0 40px;
+    padding: 27px 0 40px;
 }
 
 .header-section {
@@ -131,14 +131,14 @@ body {
     font-weight: 300;
     letter-spacing: -0.3px;
     max-width: 1000px;
-    margin: 0 auto;
+    margin: -22px auto;
 }
 
 .paragraph-section {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 2rem;
-    margin-top: 2.5rem;
+    margin-top: 3.75rem;
 }
 
 .paragraph-section p {
